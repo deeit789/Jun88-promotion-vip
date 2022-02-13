@@ -1,0 +1,102 @@
+html,
+body {
+  color: #000000;
+  font-family: "Poppins", sans-serif;
+  font-size: 62.5%;
+}
+
+.header .menu-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.header .menu-item a {
+  text-align: center;
+}
+
+.menu-icon {
+  width: 40px;
+  height: 40px;
+}
+
+.header {
+  background: url(../images/bg-header.png);
+  background-repeat: no-repeat;
+}
+
+.menu {
+  display: flex;
+  align-items: flex-start;
+}
+
+.logo-imgae img {
+  width: auto;
+  height: auto;
+}
+
+.header .menu-item p {
+  margin-top: 1rem;
+  font-size: 1.8rem;
+}
+
+.content {
+  background: url(../images/bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+.container-content {
+  background: #25a9df;
+  padding: 2rem;
+}
+
+.box {
+  background-color: #ffffff;
+  padding: 5rem;
+}
+
+.box p,
+.box-table {
+  line-height: 2.8rem;
+  font-size: 1.8rem;
+}
+
+.box-table {
+  margin-top: 2rem;
+}
+
+.content .box p {
+  margin-top: 1rem;
+}
+
+.footer {
+}
+
+.footer-container {
+  height: 100px;
+}
+
+.footer img {
+  object-fit: none;
+}
+
+.footer p {
+  color: #000000;
+  font-size: 1.8rem;
+  text-align: center;
+  padding-bottom: 1.5rem;
+}
+
+table.table-bordered {
+  border: 1px solid #ffffff;
+  margin-top: 20px;
+}
+table.table-bordered > thead > tr > th {
+  border: 1px solid #ffffff;
+}
+table.table-bordered > tbody > tr > td {
+  border: 1px solid #ffffff;
+}
