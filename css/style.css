@@ -9,16 +9,17 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
 }
 
 .header .menu-item a {
   text-align: center;
+  padding: 0 2rem 1rem 2rem;
 }
 
 .menu-icon {
   width: 40px;
   height: 40px;
+  margin-top: 0.5rem;
 }
 
 .header {
@@ -29,6 +30,7 @@ body {
 .menu {
   display: flex;
   align-items: flex-start;
+  justify-content: center;
 }
 
 .logo-imgae img {
@@ -39,6 +41,19 @@ body {
 .header .menu-item p {
   margin-top: 1rem;
   font-size: 1.8rem;
+  color: #ffffff;
+}
+
+.menu-link:hover {
+  background-color: #0000006b;
+}
+
+.menu-link-imgae:hover {
+  background-color: transparent;
+}
+
+.banner {
+  margin-top: -8.5rem;
 }
 
 .content {
@@ -47,6 +62,7 @@ body {
   background-size: cover;
   padding-top: 5rem;
   padding-bottom: 5rem;
+  background-position: bottom;
 }
 .container-content {
   background: #25a9df;
@@ -58,14 +74,19 @@ body {
   padding: 5rem;
 }
 
-.box p,
-.box-table {
+.box p {
   line-height: 2.8rem;
   font-size: 1.8rem;
 }
 
 .box-table {
   margin-top: 2rem;
+  line-height: 2.8rem;
+  font-size: 1.4rem;
+}
+
+.box-table .table {
+  background-color: #2c2c2c;
 }
 
 .content .box p {
@@ -73,10 +94,11 @@ body {
 }
 
 .footer {
+  background-color: rgb(31, 31, 31);
 }
 
 .footer-container {
-  height: 100px;
+  padding: 3rem;
 }
 
 .footer img {
@@ -84,19 +106,27 @@ body {
 }
 
 .footer p {
-  color: #000000;
+  color: #ffffff;
   font-size: 1.8rem;
   text-align: center;
-  padding-bottom: 1.5rem;
+  margin-top: 3rem;
 }
 
 table.table-bordered {
-  border: 1px solid #ffffff;
+  border: 1px solid #000;
   margin-top: 20px;
 }
 table.table-bordered > thead > tr > th {
-  border: 1px solid #ffffff;
+  border: 1px solid #000;
 }
 table.table-bordered > tbody > tr > td {
-  border: 1px solid #ffffff;
+  border: 1px solid #000;
+}
+
+body > div.content > div > div > div > table > tbody > tr > th {
+  border: 1px solid #000;
+  padding: 1rem;
+  font-weight: 600;
+  background-color: #e9dc85;
+  color: #000;
 }
