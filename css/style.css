@@ -63,10 +63,16 @@ body {
   background-size: cover;
   padding-top: 5rem;
   padding-bottom: 5rem;
-  background-position: bottom;
+  background-position: top;
 }
 .container-content {
-  background: #25a9df;
+  background: repeating-linear-gradient(
+    45deg,
+    #25a8de,
+    #617fe0 10px,
+    #fbf288 10px,
+    #4a73d2 20px
+  );
   padding: 1.5rem;
 }
 
@@ -184,6 +190,40 @@ body > div.content > div > div > div > table > tbody > tr:hover {
   background-color: transparent;
 }
 
+.gif {
+  width: 20rem;
+  height: 60rem;
+  background-color: #f00;
+  position: fixed;
+  z-index: 1212;
+  top: calc(50%);
+  transform: translateY(calc(-50%));
+  transition: all 0.5s ease-in-out;
+  /* background: rgb(255, 255, 255); */
+  /* border: 1px solid #000; */
+  /* display: none; */
+}
+
+.gif span {
+  cursor: pointer;
+  right: 5px;
+  top: 5px;
+  padding: 5px 10px;
+  position: absolute;
+  background-color: #ffffff69;
+  font-weight: bold;
+}
+
+.gif-left {
+  left: 4rem;
+  background: url(../images/gif-left.gif);
+}
+
+.gif-right {
+  right: 4rem;
+  background: url(../images/gif-right.gif);
+}
+
 @media screen and (max-width: 1023.98px) {
   .mobile-hidden {
     display: none !important;
@@ -267,5 +307,9 @@ body > div.content > div > div > div > table > tbody > tr:hover {
 
   .menu-mobile .menu-item a {
     font-size: 1.4rem;
+  }
+
+  .box {
+    padding: 1rem;
   }
 }
