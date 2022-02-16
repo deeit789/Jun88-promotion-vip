@@ -17,17 +17,19 @@
 
     <link rel="stylesheet" href="/css/reset.css">
     <link rel="stylesheet" href="/css/style.css">
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 
 <body>
-    <!-- <div class="gif gif-left">
+    <div class="gif gif-left">
         <span id="close-gif-left">x</span>
     </div>
 
     <div class="gif gif-right">
         <span id="close-gif-right">x</span>
-    </div> -->
+    </div>
     <div class="header mobile-hidden">
         <div class="container">
             <div class="menu">
@@ -77,25 +79,24 @@
         </div>
     </div>
 
-    <div class="content">
+    <div class="content" id="scroll-to">
         <div class="container container-content">
             <div class="box">
                 <p><span style="color: red">Đối tượng áp dụng：</span> Tất cả Hội viên của Jun88</p>
-                <p><span style="color: red">Nội dung hoạt động: </span> Số tiền Hội viên đặt cược vào GAME SLOT
-                    ,GAME BÀI , Video trực tuyến, Xổ số sẽ được tích lũy mãi mãi, “HÃY ĐỂ TÀI KHOẢN CỦA BẠN TRỞ THÀNH
-                    NGUỒN THU NHẬP VĨNH VIỄN”.
+                <p><span style="color: red">Nội dung khuyến mãi: </span> Tổng cược hợp lệ của quý khách sẽ được tích luỹ
+                    mãi mãi theo thời gian, hệ thống dựa theo cấp bậc dưới đây để tặng khuyến mãi. ”THAM GIA CÀNG LÂU,
+                    CƯỢC
+                    CÀNG NHIỀU BẠN CÀNG NHẬN ĐƯỢC NHIỀU KHUYẾN MÃI”
                 </p>
-                <p><span style="color: red">Cách nhận phần thưởng theo cấp bậc：</span> Được tính theo cấp bậc mới nhất,
-                    người chơi không cần soạn đơn xin , hệ thống sẽ tự động gửi thưởng, đồng thời gửi tin nhắn thông báo
-                    tới Tài khoản của bạn, để rút tiền thưởng từ tài khoản của bạn, bạn cần tiến hành đặt cược sao cho
-                    tổng số tiền đặt cược bằng với số tiền thưởng mà bạn nhận được, cấp bậc của bạn càng cao, thì phần
-                    thưởng càng cao, phần thưởng hàng tháng có thể lên đến：
+                <p><span style="color: red">Cách nhận phần thưởng theo cấp VIP: </span> Quý khách không cần đăng ký, dựa
+                    vào tổng cược tích luỹ của Quý khách hệ thống tiến hành tự phát thưởng, chỉ cần nhập tên đăng nhập
+                    của Quý khách ở nút phía trên và click tìm kiếm là tiến hành nhận thưởng.
                 </p>
                 <div class="box-table">
-                    <table class="table table-bordered text-white table-bordered text-center table-responsive-lg">
-                        <tbody>
+                    <table class="table table-bordered text-white table-bordered text-center ">
+                        <thead class="thead-light" style="background-color: #02a9dc;">
                             <tr>
-                                <th>Cấp độ</th>
+                                <th>Cấp độ VIP</th>
                                 <th>Tỷ lệ cược hợp lệ</th>
                                 <th>Thưởng tăng cấp</th>
                                 <th>Thưởng hằng tuần</th>
@@ -103,8 +104,10 @@
                                 <th>Thưởng tích lũy tăng cấp
                                 </th>
                             </tr>
+                        </thead>
+                        <tbody>
                             <tr>
-                                <td>Cấp 1</td>
+                                <td>VIP 1</td>
                                 <td>30,000+</td>
                                 <td>20</td>
                                 <td></td>
@@ -112,7 +115,7 @@
                                 <td>20</td>
                             </tr>
                             <tr>
-                                <td>Cấp 2</td>
+                                <td>VIP 2</td>
                                 <td>100,000+</td>
                                 <td>25</td>
                                 <td></td>
@@ -120,7 +123,7 @@
                                 <td>45</td>
                             </tr>
                             <tr>
-                                <td>Cấp 3</td>
+                                <td>VIP 3</td>
                                 <td>200,000+</td>
                                 <td>30</td>
                                 <td></td>
@@ -128,7 +131,7 @@
                                 <td>75</td>
                             </tr>
                             <tr>
-                                <td>Cấp 4</td>
+                                <td>VIP 4</td>
                                 <td>300,000+</td>
                                 <td>40</td>
                                 <td></td>
@@ -136,7 +139,7 @@
                                 <td>115</td>
                             </tr>
                             <tr>
-                                <td>Cấp 5</td>
+                                <td>VIP 5</td>
                                 <td>500,000+</td>
                                 <td>50</td>
                                 <td></td>
@@ -144,7 +147,7 @@
                                 <td>165</td>
                             </tr>
                             <tr>
-                                <td>Cấp 6</td>
+                                <td>VIP 6</td>
                                 <td>700,000+</td>
                                 <td>60</td>
                                 <td>3</td>
@@ -152,7 +155,7 @@
                                 <td>225</td>
                             </tr>
                             <tr>
-                                <td>Cấp 7</td>
+                                <td>VIP 7</td>
                                 <td>1,000,000+</td>
                                 <td>80</td>
                                 <td>6</td>
@@ -160,7 +163,7 @@
                                 <td>305</td>
                             </tr>
                             <tr>
-                                <td>Cấp 8</td>
+                                <td>VIP 8</td>
                                 <td>1,500,000+</td>
                                 <td>110</td>
                                 <td>10</td>
@@ -168,7 +171,7 @@
                                 <td>415</td>
                             </tr>
                             <tr>
-                                <td>Cấp 9</td>
+                                <td>VIP 9</td>
                                 <td>2,000,000+</td>
                                 <td>180</td>
                                 <td>15</td>
@@ -176,7 +179,7 @@
                                 <td>595</td>
                             </tr>
                             <tr>
-                                <td>Cấp 10</td>
+                                <td>VIP 10</td>
                                 <td>2,500,000+</td>
                                 <td>260</td>
                                 <td>20</td>
@@ -184,7 +187,7 @@
                                 <td>855</td>
                             </tr>
                             <tr>
-                                <td>Cấp 11</td>
+                                <td>VIP 11</td>
                                 <td>3,000,000+</td>
                                 <td>320</td>
                                 <td>25</td>
@@ -192,7 +195,7 @@
                                 <td>1,175</td>
                             </tr>
                             <tr>
-                                <td>Cấp 12</td>
+                                <td>VIP 12</td>
                                 <td>4,000,000+</td>
                                 <td>380</td>
                                 <td>38</td>
@@ -200,7 +203,7 @@
                                 <td>1,555</td>
                             </tr>
                             <tr>
-                                <td>Cấp 13</td>
+                                <td>VIP 13</td>
                                 <td>5,000,000+</td>
                                 <td>460</td>
                                 <td>48</td>
@@ -208,7 +211,7 @@
                                 <td>2,015</td>
                             </tr>
                             <tr>
-                                <td>Cấp 14</td>
+                                <td>VIP 14</td>
                                 <td>6,000,000+</td>
                                 <td>530</td>
                                 <td>58</td>
@@ -216,7 +219,7 @@
                                 <td>2,545</td>
                             </tr>
                             <tr>
-                                <td>Cấp 15</td>
+                                <td>VIP 15</td>
                                 <td>8,000,000+</td>
                                 <td>600</td>
                                 <td>78</td>
@@ -224,7 +227,7 @@
                                 <td>3,145</td>
                             </tr>
                             <tr>
-                                <td>Cấp 16</td>
+                                <td>VIP 16</td>
                                 <td>10,000,000+</td>
                                 <td>660</td>
                                 <td>108</td>
@@ -232,7 +235,7 @@
                                 <td>3,805</td>
                             </tr>
                             <tr>
-                                <td>Cấp 17</td>
+                                <td>VIP 17</td>
                                 <td>12,000,000+</td>
                                 <td>730</td>
                                 <td>128</td>
@@ -240,7 +243,7 @@
                                 <td>4,535</td>
                             </tr>
                             <tr>
-                                <td>Cấp 18</td>
+                                <td>VIP 18</td>
                                 <td>15,000,000+</td>
                                 <td>800</td>
                                 <td>158</td>
@@ -248,7 +251,7 @@
                                 <td>5,335</td>
                             </tr>
                             <tr>
-                                <td>Cấp 19</td>
+                                <td>VIP 19</td>
                                 <td>20,000,000+</td>
                                 <td>880</td>
                                 <td>218</td>
@@ -256,7 +259,7 @@
                                 <td>6,215</td>
                             </tr>
                             <tr>
-                                <td>Cấp 20</td>
+                                <td>VIP 20</td>
                                 <td>30,000,000+</td>
                                 <td>1,300</td>
                                 <td>288</td>
@@ -264,7 +267,7 @@
                                 <td>7,515</td>
                             </tr>
                             <tr>
-                                <td>Cấp 21</td>
+                                <td>VIP 21</td>
                                 <td>40,000,000+</td>
                                 <td>1,800</td>
                                 <td>338</td>
@@ -272,7 +275,7 @@
                                 <td>9,315</td>
                             </tr>
                             <tr>
-                                <td>Cấp 22</td>
+                                <td>VIP 22</td>
                                 <td>50,000,000+</td>
                                 <td>2,300</td>
                                 <td>398</td>
@@ -280,7 +283,7 @@
                                 <td>11,615</td>
                             </tr>
                             <tr>
-                                <td>Cấp 23</td>
+                                <td>VIP 23</td>
                                 <td>60,000,000+</td>
                                 <td>3,000</td>
                                 <td>458</td>
@@ -288,7 +291,7 @@
                                 <td>14,615</td>
                             </tr>
                             <tr>
-                                <td>Cấp 24</td>
+                                <td>VIP 24</td>
                                 <td>70,000,000+</td>
                                 <td>3,700</td>
                                 <td>568</td>
@@ -296,7 +299,7 @@
                                 <td>18,315</td>
                             </tr>
                             <tr>
-                                <td>Cấp 25</td>
+                                <td>VIP 25</td>
                                 <td>80,000,000+</td>
                                 <td>4,500</td>
                                 <td>658</td>
@@ -304,7 +307,7 @@
                                 <td>22,815</td>
                             </tr>
                             <tr>
-                                <td>Cấp 26</td>
+                                <td>VIP 26</td>
                                 <td>90,000,000+</td>
                                 <td>5,200</td>
                                 <td>738</td>
@@ -312,7 +315,7 @@
                                 <td>28,015</td>
                             </tr>
                             <tr>
-                                <td>Cấp 27</td>
+                                <td>VIP 27</td>
                                 <td>100,000,000+</td>
                                 <td>5,600</td>
                                 <td>828</td>
@@ -320,7 +323,7 @@
                                 <td>33,615</td>
                             </tr>
                             <tr>
-                                <td>Cấp 28</td>
+                                <td>VIP 28</td>
                                 <td>120,000,000+</td>
                                 <td>6,000</td>
                                 <td>958</td>
@@ -328,7 +331,7 @@
                                 <td>39,615</td>
                             </tr>
                             <tr>
-                                <td>Cấp 29</td>
+                                <td>VIP 29</td>
                                 <td>140,000,000+</td>
                                 <td>6,500</td>
                                 <td>1,088</td>
@@ -336,7 +339,7 @@
                                 <td>46,115</td>
                             </tr>
                             <tr>
-                                <td>Cấp 30</td>
+                                <td>VIP 30</td>
                                 <td>160,000,000+</td>
                                 <td>7,200</td>
                                 <td>1,188</td>
@@ -344,7 +347,7 @@
                                 <td>53,315</td>
                             </tr>
                             <tr>
-                                <td>Cấp 31</td>
+                                <td>VIP 31</td>
                                 <td>180,000,000+</td>
                                 <td>8,000</td>
                                 <td>1,388</td>
@@ -352,7 +355,7 @@
                                 <td>61,315</td>
                             </tr>
                             <tr>
-                                <td>Cấp 32</td>
+                                <td>VIP 32</td>
                                 <td>210,000,000+</td>
                                 <td>8,800</td>
                                 <td>1,588</td>
@@ -360,7 +363,7 @@
                                 <td>70,115</td>
                             </tr>
                             <tr>
-                                <td>Cấp 33</td>
+                                <td>VIP 33</td>
                                 <td>240,000,000+</td>
                                 <td>9,800</td>
                                 <td>1,888</td>
@@ -368,7 +371,7 @@
                                 <td>79,915</td>
                             </tr>
                             <tr>
-                                <td>Cấp 34</td>
+                                <td>VIP 34</td>
                                 <td>270,000,000+</td>
                                 <td>10,800</td>
                                 <td>2,288</td>
@@ -376,7 +379,7 @@
                                 <td>90,715</td>
                             </tr>
                             <tr>
-                                <td>Cấp 35</td>
+                                <td>VIP 35</td>
                                 <td>300,000,000+</td>
                                 <td>11,800</td>
                                 <td>2,588</td>
@@ -384,7 +387,7 @@
                                 <td>102,515</td>
                             </tr>
                             <tr>
-                                <td>Cấp 36</td>
+                                <td>VIP 36</td>
                                 <td>330,000,000+</td>
                                 <td>12,800</td>
                                 <td>2,888</td>
@@ -392,7 +395,7 @@
                                 <td>115,315</td>
                             </tr>
                             <tr>
-                                <td>Cấp 37</td>
+                                <td>VIP 37</td>
                                 <td>360,000,000+</td>
                                 <td>13,800</td>
                                 <td>3,188</td>
@@ -400,7 +403,7 @@
                                 <td>129,115</td>
                             </tr>
                             <tr>
-                                <td>Cấp 38</td>
+                                <td>VIP 38</td>
                                 <td>390,000,000+</td>
                                 <td>14,800</td>
                                 <td>3,388</td>
@@ -408,7 +411,7 @@
                                 <td>143,915</td>
                             </tr>
                             <tr>
-                                <td>Cấp 39</td>
+                                <td>VIP 39</td>
                                 <td>420,000,000+</td>
                                 <td>15,800</td>
                                 <td>3,688</td>
@@ -416,7 +419,7 @@
                                 <td>159,715</td>
                             </tr>
                             <tr>
-                                <td>Cấp 40</td>
+                                <td>VIP 40</td>
                                 <td>450,000,000+</td>
                                 <td>16,800</td>
                                 <td>3,988</td>
@@ -424,7 +427,7 @@
                                 <td>176,515</td>
                             </tr>
                             <tr>
-                                <td>Cấp 41</td>
+                                <td>VIP 41</td>
                                 <td>500,000,000+</td>
                                 <td>17,800</td>
                                 <td>4,288</td>
@@ -432,7 +435,7 @@
                                 <td>194,315</td>
                             </tr>
                             <tr>
-                                <td>Cấp 42</td>
+                                <td>VIP 42</td>
                                 <td>600,000,000+</td>
                                 <td>20,800</td>
                                 <td>4,888</td>
@@ -440,7 +443,7 @@
                                 <td>215,115</td>
                             </tr>
                             <tr>
-                                <td>Cấp 43</td>
+                                <td>VIP 43</td>
                                 <td>800,000,000+</td>
                                 <td>38,800</td>
                                 <td>5,888</td>
@@ -448,7 +451,7 @@
                                 <td>253,915</td>
                             </tr>
                             <tr>
-                                <td>Cấp 44</td>
+                                <td>VIP 44</td>
                                 <td>1,000,000,000+</td>
                                 <td>48,800</td>
                                 <td>6,888</td>
@@ -456,7 +459,7 @@
                                 <td>302,715</td>
                             </tr>
                             <tr>
-                                <td>Cấp 45</td>
+                                <td>VIP 45</td>
                                 <td>1,500,000,000+</td>
                                 <td>68,800</td>
                                 <td>8,888</td>
@@ -464,7 +467,7 @@
                                 <td>371,515</td>
                             </tr>
                             <tr>
-                                <td>Cấp 46</td>
+                                <td>VIP 46</td>
                                 <td>2,000,000,000+</td>
                                 <td>88,800</td>
                                 <td>10,888</td>
@@ -472,7 +475,7 @@
                                 <td>460,315</td>
                             </tr>
                             <tr>
-                                <td>Cấp 47</td>
+                                <td>VIP 47</td>
                                 <td>2,500,000,000+</td>
                                 <td>108,800</td>
                                 <td>13,888</td>
@@ -480,7 +483,7 @@
                                 <td>569,115</td>
                             </tr>
                             <tr>
-                                <td>Cấp 48</td>
+                                <td>VIP 48</td>
                                 <td>3,000,000,000+</td>
                                 <td>128,800</td>
                                 <td>15,888</td>
@@ -488,7 +491,7 @@
                                 <td>697,915</td>
                             </tr>
                             <tr>
-                                <td>Cấp 49</td>
+                                <td>VIP 49</td>
                                 <td>3,500,000,000+</td>
                                 <td>158,800</td>
                                 <td>17,888</td>
@@ -496,7 +499,7 @@
                                 <td>856,715</td>
                             </tr>
                             <tr>
-                                <td>Cấp 50</td>
+                                <td>VIP 50</td>
                                 <td>4,000,000,000+</td>
                                 <td>188,800</td>
                                 <td>19,888</td>
@@ -504,7 +507,7 @@
                                 <td>1,045,515</td>
                             </tr>
                             <tr>
-                                <td>Cấp 51</td>
+                                <td>VIP 51</td>
                                 <td>4,500,000,000+</td>
                                 <td>208,800</td>
                                 <td>21,888</td>
@@ -512,7 +515,7 @@
                                 <td>1,254,315</td>
                             </tr>
                             <tr>
-                                <td>Cấp 52</td>
+                                <td>VIP 52</td>
                                 <td>5,000,000,000+</td>
                                 <td>228,800</td>
                                 <td>23,888</td>
@@ -520,7 +523,7 @@
                                 <td>1,483,115</td>
                             </tr>
                             <tr>
-                                <td>Cấp 53</td>
+                                <td>VIP 53</td>
                                 <td>5,500,000,000+</td>
                                 <td>248,800</td>
                                 <td>25,888</td>
@@ -528,7 +531,7 @@
                                 <td>1,731,915</td>
                             </tr>
                             <tr>
-                                <td>Cấp 54</td>
+                                <td>VIP 54</td>
                                 <td>6,000,000,000+</td>
                                 <td>268,800</td>
                                 <td>27,888</td>
@@ -536,7 +539,7 @@
                                 <td>2,000,715</td>
                             </tr>
                             <tr>
-                                <td>Cấp 55</td>
+                                <td>VIP 55</td>
                                 <td>6,500,000,000+</td>
                                 <td>288,800</td>
                                 <td>29,888</td>
@@ -544,7 +547,7 @@
                                 <td>2,289,515</td>
                             </tr>
                             <tr>
-                                <td>Cấp 56</td>
+                                <td>VIP 56</td>
                                 <td>7,000,000,000+</td>
                                 <td>308,800</td>
                                 <td>31,888</td>
@@ -552,7 +555,7 @@
                                 <td>2,598,315</td>
                             </tr>
                             <tr>
-                                <td>Cấp 57</td>
+                                <td>VIP 57</td>
                                 <td>7,500,000,000+</td>
                                 <td>328,800</td>
                                 <td>33,888</td>
@@ -560,7 +563,7 @@
                                 <td>2,927,115</td>
                             </tr>
                             <tr>
-                                <td>Cấp 58</td>
+                                <td>VIP 58</td>
                                 <td>8,000,000,000+</td>
                                 <td>348,800</td>
                                 <td>35,888</td>
@@ -568,7 +571,7 @@
                                 <td>3,275,915</td>
                             </tr>
                             <tr>
-                                <td>Cấp 59</td>
+                                <td>VIP 59</td>
                                 <td>8,500,000,000+</td>
                                 <td>368,800</td>
                                 <td>37,888</td>
@@ -576,7 +579,7 @@
                                 <td>3,644,715</td>
                             </tr>
                             <tr>
-                                <td>Cấp 60</td>
+                                <td>VIP 60</td>
                                 <td>10,000,000,000+</td>
                                 <td>388,800</td>
                                 <td>39,888</td>
@@ -586,20 +589,32 @@
                         </tbody>
                     </table>
                 </div>
-                <p>Hội viên đặt cược vào GAME SLOT ,GAME BÀI , Video trực tuyến , Xổ số tại Jun88, mỗi lần đặt cược hợp
-                    lệ sẽ được tích lũy mãi mãi. Khi tổng số tiền đặt cược tích lũy đến một tiêu chuẩn nhất định bạn sẽ
-                    được thăng cấp. Mỗi lần lên cấp bạn sẽ nhận được phần thưởng tương ứng với cấp bậc đó. Bạn có thể
-                    nhận được tối đa 240.000.000 VNĐ, cấp bậc càng cao, phần thưởng càng cao, hàng tuần, hàng tháng đều
-                    có các phần thưởng hấp dẫn đang chờ bạn.
+                <p>Quý thành viên tham gia tại Jun88 khi tổng số tiền đặt cược tích lũy đến một tiêu chuẩn như trên bạn
+                    sẽ được thăng cấp. Mỗi lần lên cấp bạn sẽ nhận được phần thưởng tương ứng với cấp bậc đó. Cấp bậc
+                    càng cao, phần thưởng càng lớn, hàng tuần, hàng tháng đều có các phần thưởng hấp dẫn đang chờ bạn.
                 </p>
-                <p><span style="color: red">Ví dụ: </span> Thành viên tích lũy được 3.24 tỷ VNĐ tổng số tiền cược tích
-                    lũy
-                    có thể nhận được quà tặng thăng cấp là 264.000 VNĐ, phần thưởng tuần là 24.000 VNĐ và phần thưởng
-                    tháng là 90.000 VNĐ
+                <p><span style="color: red">Ví dụ: </span> Thành viên tích lũy được 30 tỷ VNĐ (30,000,000 điểm), tương
+                    ứng với VIP20,và nhận được quà tặng thăng cấp lên VIP 20 là 1,300,000 VNĐ, phần thưởng hàng tuần là
+                    288,000 VNĐ và phần thưởng hàng tháng là 780.000 VNĐ, thưởng tích luỹ tăng cấp là 7,515,000 VND.
                 </p>
-                <p><span style="color: red">Chú ý: </span> Nếu tổng số tiền cược của tháng không đạt 3% tổng số tiền
+                <p><span style="color: red">Chú ý: </span>Nếu tổng số tiền cược trong tháng không đạt 3% tổng số tiền
                     cược hợp lệ tích lũy, thì bạn sẽ không đủ điều kiện để nhận thưởng tuần và thưởng tháng.
                 </p>
+                <p><span style="color: red">Làm sao để nhận phần thưởng thăng cấp: </span>
+                    Sau khi dữ liệu được cập nhật và hệ thống phê duyệt người chơi đáp ứng đủ yêu cầu thăng cấp, Quý
+                    khách không cần đăng ký, dựa vào tổng cược tích luỹ của Quý khách hệ thống tiến hành tự phát thưởng,
+                    chỉ cần nhập tên đăng nhập của Quý khách ở nút phía trên và click tìm kiếm là tiến hành nhận thưởng.
+                </p>
+                <p><span style="color: red">Thưởng tích lũy tăng cấp: </span>Ví dụ người chơi được thăng cấp từ Cấp 1
+                    lên Cấp 3, thì phần thưởng tích luỹ thăng cấp mà người chơi nhận được sẽ được tính như sau:
+                    20.000 VNĐ ( phần thưởng thăng cấp VIP 1) + 25,000 VND ( phần thưởng thăng cấp VIP 2) + 30,000 VND
+                    (phần thưởng thăng cấp VIP 3) = 85,000 VNĐ.</p>
+                <p>Tất cả các chương trình ưu đãi của Jun88 đều được thiết kế đặc biệt dành cho người chơi. Nếu phát
+                    hiện bất kỳ nhóm hoặc cá nhân nào có hành vi gian lận để nhận tiền thưởng hay có bất kỳ lời đe dọa,
+                    lạm dụng ưu đãi của công ty, v.v., Jun88 có quyền đóng băng hoặc hủy bỏ tài khoản và số dư tài khoản
+                    của nhóm hoặc cá nhân đó</p>
+                <p>Jun88 có quyền giải thích cuối cùng về các sự kiện và quyền sửa đổi hoặc chấm dứt sự kiện mà không
+                    cần thông báo,áp dụng đối với tất cả các ưu đãi</p>
             </div>
         </div>
     </div>
@@ -640,6 +655,35 @@
         </div>
     </div>
 
+
+    <script>
+
+        var width = $(window).width();
+        if (width <= 1024) {
+            $('.gif').hide();
+        }
+        //Close gif 
+        $('#close-gif-left').on('click', function () {
+            $('.gif-left').hide()
+        });
+
+        $('#close-gif-right').on('click', function () {
+            $('.gif-right').hide()
+        })
+
+        // trigger height show gif
+        $('.gif').hide();
+
+        $(window).scroll(function () {
+            var wS = $(this).scrollTop();
+            if (wS >= 560) {
+                $('.gif').show();
+            } else {
+                $('.gif').hide();
+            }
+        });
+
+    </script>
 
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
